@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Slider Continuo Responsivo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #111;
+      font-family: sans-serif;
+    }
+
+    .slider {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      border: 4px solid #fff;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(300px * 40);
+      animation: scroll 40s linear infinite;
+    }
+
+    .slider:hover .slide-track {
+      animation-play-state: paused;
+    }
+
+    .slide {
+      flex: 0 0 auto;
+      width: 300px;
+      margin-right: 10px;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .slide {
+        width: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .slide {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slider">
+  <div class="slide-track">
+    <!-- 20 imágenes originales -->
+    <div class="slide"><img src="images/slide/sl01.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl02.jpg" alt="Imagen 301"></div>
+    <div class="slide"><img src="images/slide/sl03.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl04.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl05.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl06.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl07.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl08.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl09.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl10.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl11.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl12.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl13.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl14.jpg" alt="Imagen 300"></div>
+    
+    <!-- 20 imágenes duplicadas -->
+    <div class="slide"><img src="images/slide/sl01.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl02.jpg" alt="Imagen 301"></div>
+    <div class="slide"><img src="images/slide/sl03.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl04.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl05.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl06.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl07.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl08.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl09.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl10.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl11.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl12.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl13.jpg" alt="Imagen 300"></div>
+    <div class="slide"><img src="images/slide/sl14.jpg" alt="Imagen 300"></div>
+
+  </div>
+</div>
+
+</body>
+</html>
